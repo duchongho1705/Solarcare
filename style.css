@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
+}
+
+.editable-active {
+    border: 1px dashed #3b82f6;
+    padding: 4px;
+    background-color: #eff6ff;
+    border-radius: 4px;
+    outline: none;
+    transition: all 0.2s;
+}
+
+.editable-active:focus {
+    border: 1px solid #2563eb;
+    background-color: #fff;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.gradient-header {
+    background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #059669 100%);
+}
+
+.glass-panel {
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(10px);
+}
+
+.tab-active {
+    border-bottom: 3px solid #059669;
+    color: #059669;
+    font-weight: 700;
+}
+
+.tab-inactive {
+    color: #64748b;
+    font-weight: 500;
+    border-bottom: 3px solid transparent;
+}
+
+.tab-inactive:hover {
+    color: #0f172a;
+    border-bottom: 3px solid #cbd5e1;
+}
+
+.comment-box {
+    border-left: 4px solid #059669;
+}
+
+.pill {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.tool-badge {
+    display: inline-flex;
+    items-center;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    background-color: #f1f5f9;
+    color: #475569;
+    border: 1px solid #e2e8f0;
+    margin-right: 6px;
+    margin-bottom: 6px;
+}
+
+.equal-height-grid {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.timeline-container {
+    position: relative;
+    padding-left: 1.5rem;
+    border-left: 2px solid #10b981;
+    margin-left: 1rem;
+}
+
+.timeline-dot {
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    background-color: #10b981;
+    border-radius: 50%;
+    left: -0.56rem;
+    top: 0.25rem;
+    border: 3px solid #fff;
+    box-shadow: 0 0 0 1px #10b981;
+}
+
+.journey-step {
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.journey-step::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.25rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: #cbd5e1;
+    border: 3px solid #fff;
+    box-shadow: 0 0 0 1px #cbd5e1;
+    z-index: 10;
+}
+
+.journey-step::after {
+    content: '';
+    position: absolute;
+    left: 0.45rem;
+    top: 1rem;
+    bottom: -1rem;
+    width: 2px;
+    background-color: #e2e8f0;
+}
+
+.journey-step:last-child::after {
+    display: none;
+}
+
+.journey-step.b2c-step::before {
+    background-color: #3b82f6;
+    box-shadow: 0 0 0 1px #3b82f6;
+}
+
+.journey-step.b2b-step::before {
+    background-color: #10b981;
+    box-shadow: 0 0 0 1px #10b981;
+}

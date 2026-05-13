@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SolarCare by NCSE - Strategic Marketing Proposal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="antialiased pb-24">
+
+    <!-- Header -->
+    <header class="gradient-header text-white sticky top-0 z-50 shadow-xl">
+        <div class="max-w-7xl mx-auto px-4 py-5 flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="flex items-center space-x-4">
+                <div class="bg-white/10 p-3 rounded-lg backdrop-blur-sm">
+                    <i class="fa-solid fa-solar-panel text-3xl text-emerald-400"></i>
+                </div>
+                <div>
+                    <h1 class="text-3xl font-bold tracking-tight">SolarCare <span
+                            class="text-sm font-normal text-emerald-200 uppercase tracking-widest">by NCSE</span></h1>
+                    <p class="text-sm text-blue-100 mt-1">Chiến lược Thương hiệu & Phát triển Dịch vụ O&M Chuyên nghiệp
+                    </p>
+                </div>
+            </div>
+            <div class="flex space-x-3">
+                <button id="editToggleBtn"
+                    class="bg-white/10 hover:bg-white/20 px-5 py-2.5 rounded-lg text-sm font-semibold transition-all border border-white/20 flex items-center"
+                    onclick="toggleEditMode()">
+                    <i class="fa-solid fa-pen-nib mr-2"></i><span>Bật Chỉnh Sửa</span>
+                </button>
+                <button
+                    class="bg-emerald-500 hover:bg-emerald-600 px-5 py-2.5 rounded-lg text-sm font-semibold transition-all shadow-lg flex items-center"
+                    onclick="window.print()">
+                    <i class="fa-solid fa-file-pdf mr-2"></i><span>Xuất PDF</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 mt-8 space-y-8">
+
+        <!-- 1. Tuyên ngôn & Key Message -->
+        <section class="glass-panel rounded-2xl shadow-sm p-8 border border-slate-200 relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-emerald-50 rounded-bl-full -z-10"></div>
+            <div class="flex items-center space-x-3 mb-6 border-b border-slate-100 pb-4">
+                <div class="w-12 h-12 rounded-xl bg-slate-100 flex items-center justify-center text-slate-700">
+                    <i class="fa-solid fa-flag text-2xl"></i>
+                </div>
+                <h2 class="text-2xl font-bold text-slate-800">1. Sứ Mệnh & Tuyên Ngôn Thương Hiệu</h2>
+            </div>
+
+            <div class="editable mb-8" data-id="key-message">
+                <div class="bg-gradient-to-r from-emerald-50 to-blue-50 border-l-4 border-emerald-500 p-6 rounded-r-lg">
+                    <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Thông Điệp Định Vị (Core
+                        Message)</h4>
+                    <p class="text-2xl font-bold text-slate-800 leading-tight">"Thấu hiểu rủi ro - Giải quyết triệt để -
+                        Đồng hành bền vững."</p>
+                    <p class="text-slate-600 mt-2 text-sm leading-relaxed">Sứ mệnh của SolarCare không phải là cung ứng
+                        dịch vụ vệ sinh đơn thuần. Chúng tôi định vị mình là <strong>Đối tác quản trị rủi ro tài
+                            sản</strong>. Chúng tôi giúp Hộ gia đình trút bỏ nỗi lo an toàn điện, và giải quyết bài toán
+                        thiếu hụt nhân sự O&M chuyên trách cho các Nhà đầu tư EPC/PPA. Mọi giải pháp truyền thông đều
+                        xuất phát từ việc thấu hiểu sự bất an của khách hàng.</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 editable" data-id="sec1-details">
+                <div class="space-y-2 equal-height-grid">
+                    <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider">Nguyên Tắc Giao Tiếp (Brand
+                        Voice)</h4>
+                    <p class="text-slate-700 leading-relaxed font-medium text-sm">Chuyên nghiệp, dựa trên dữ liệu
+                        (Data-driven) và tận tâm giải quyết vấn đề. Tuyệt đối không nhồi nhét bán hàng (Hard-sell).
+                        Chúng ta giải thích cơ chế rủi ro bằng ngôn từ dễ hiểu để khách hàng nhận thức được giá trị của
+                        việc bảo dưỡng chủ động.</p>
+                </div>
+                <div class="space-y-2 equal-height-grid">
+                    <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider">Mô Hình Dịch Vụ Cốt Lõi</h4>
+                    <p class="text-slate-700 leading-relaxed text-sm">Cung cấp <strong class="text-slate-800">Dịch vụ
+                            Quản trị & Bảo dưỡng (O&M) Trọn gói định kỳ</strong>. Cam kết loại trừ các rủi ro vận hành
+                        ngầm, đảm bảo tuổi thọ hệ thống và tối ưu hóa hệ số hiệu suất (Performance Ratio) theo tiêu
+                        chuẩn quốc tế của nhà sản xuất.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Sự Khác Biệt -->
+        <section class="glass-panel rounded-2xl shadow-sm p-8 border border-slate-200">
+            <div class="flex items-center space-x-3 mb-6 border-b border-slate-100 pb-4">
+                <div class="w-12 h-12 rounded-xl bg-amber-50 flex items-center justify-center text-amber-600">
+                    <i class="fa-solid fa-medal text-2xl"></i>
+                </div>
+                <h2 class="text-2xl font-bold text-slate-800">2. Lợi Thế Cạnh Tranh: Giải Quyết Triệt Để Nỗi Lo</h2>
+            </div>
+
+            <p class="text-slate-600 mb-6 text-sm">Chúng ta đối chiếu thực trạng thị trường để chứng minh: Dịch vụ giá
+                rẻ thiếu chuyên môn sẽ đánh đổi bằng rủi ro vô hiệu hóa bảo hành và mất an toàn hệ thống.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-0 border border-slate-200 rounded-xl overflow-hidden editable"
+                data-id="differentiation">
+                <!-- Market Side -->
+                <div class="bg-slate-50 p-6 border-b md:border-b-0 md:border-r border-slate-200 equal-height-grid">
+                    <div class="flex items-center mb-4">
+                        <i class="fa-solid fa-circle-xmark text-slate-400 text-xl mr-3"></i>
+                        <h3 class="text-lg font-bold text-slate-700">Thực trạng thị trường O&M</h3>
+                    </div>
+                    <ul class="space-y-4 text-sm text-slate-600 flex-grow">
+                        <li class="flex items-start"><i
+                                class="fa-solid fa-minus text-slate-300 mt-1 mr-2"></i><span><strong>Xử lý bề mặt, bỏ
+                                    qua rủi ro ngầm:</strong> Các đơn vị nhỏ lẻ thường chỉ xịt rửa qua loa. Hệ thống vẫn
+                                tiềm ẩn nguy cơ chập cháy do dây dẫn lão hóa hoặc điểm nóng (hotspot) không được phát
+                                hiện. Khách hàng chi tiền nhưng không mua được sự an tâm.</span></li>
+                        <li class="flex items-start"><i
+                                class="fa-solid fa-minus text-slate-300 mt-1 mr-2"></i><span><strong>Quy trình sai tiêu
+                                    chuẩn kỹ thuật:</strong> Sử dụng vòi phun áp lực quá cao hoặc chổi cứng gây nứt vi
+                                liên kết (micro-cracks) trên tế bào quang điện. Điều này dẫn đến hậu quả nghiêm trọng:
+                                Hãng sản xuất lập tức từ chối bảo hành.</span></li>
+                        <li class="flex items-start"><i
+                                class="fa-solid fa-minus text-slate-300 mt-1 mr-2"></i><span><strong>Khắc phục thụ động
+                                    (Break-fix):</strong> Chỉ xuất hiện khi hệ thống đã lỗi, Inverter đã cháy hoặc sản
+                                lượng tụt dốc. Chi phí thay thế lúc này đội lên hàng chục triệu đồng.</span></li>
+                    </ul>
+                </div>
+
+                <!-- SolarCare Side -->
+                <div class="bg-emerald-50/50 p-6 equal-height-grid">
+                    <div class="flex items-center mb-4">
+                        <i class="fa-solid fa-circle-check text-emerald-500 text-xl mr-3"></i>
+                        <h3 class="text-lg font-bold text-emerald-800">Giải pháp O&M Chuyên gia từ SolarCare</h3>
+                    </div>
+                    <ul class="space-y-4 text-sm text-slate-700 flex-grow">
+                        <li class="flex items-start"><i
+                                class="fa-solid fa-check text-emerald-500 mt-1 mr-2"></i><span><strong>Chẩn đoán sâu,
+                                    giải quyết tận gốc:</strong> Đi sâu phân tích dữ liệu hiệu suất, kết hợp kiểm tra
+                                cách điện định kỳ. Loại bỏ 100% rủi ro chập cháy, trả lại sự an tâm tuyệt đối cho chủ
+                                nhà và doanh nghiệp.</span></li>
+                        <li class="flex items-start"><i
+                                class="fa-solid fa-check text-emerald-500 mt-1 mr-2"></i><span><strong>Quy trình bảo vệ
+                                    đặc quyền hãng:</strong> Ứng dụng công cụ và dung dịch tẩy rửa chuyên dụng. Chúng
+                                tôi cam kết duy trì hiệu lực bảo hành 15-20 năm của nhà sản xuất cho toàn bộ tài sản của
+                                khách hàng.</span></li>
+                        <li class="flex items-start"><i
+                                class="fa-solid fa-check text-emerald-500 mt-1 mr-2"></i><span><strong>Giám sát số hóa
+                                    cấp độ Module:</strong> Ứng dụng Drone ảnh nhiệt và AI để quét toàn bộ nhà máy. Chẩn
+                                đoán điểm chết trên từng tấm pin độc lập, cảnh báo hỏng hóc trước khi sự cố thực sự xảy
+                                ra.</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Giải mã khách hàng -->
+        <section class="glass-panel rounded-2xl shadow-sm p-8 border border-slate-200">
+            <div class="flex items-center space-x-3 mb-6 border-b border-slate-100 pb-4">
+                <div class="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center text-blue-600">
+                    <i class="fa-solid fa-users-viewfinder text-2xl"></i>
+                </div>
+                <h2 class="text-2xl font-bold text-slate-800">3. Nghiên Cứu Insight Khách Hàng (Dựa trên dữ liệu)</h2>
+            </div>
+
+            <p class="text-slate-600 mb-6 text-sm">Chiến lược truyền thông bắt buộc phải được xây dựng dựa trên những
+                "Nỗi đau" (Pain points) thực tế nhất của 2 nhóm đối tượng chiến lược.</p>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+                <!-- B2C -->
+                <div
+                    class="bg-gradient-to-br from-white to-slate-50 rounded-xl p-6 border border-slate-200 shadow-sm relative equal-height-grid">
+                    <span class="pill bg-blue-100 text-blue-700 absolute top-5 right-5">An toàn & Duy trì Sinh
+                        lời</span>
+                    <h3 class="text-xl font-bold text-slate-800 mb-5 flex items-center"><i
+                            class="fa-solid fa-house-chimney text-blue-500 mr-3"></i>Phân khúc Dân dụng (Gia đình)</h3>
+                    <div class="space-y-4 text-sm text-slate-600 flex-grow editable" data-id="b2c-insight">
+                        <div class="mb-3">
+                            <strong class="text-slate-800 block mb-2">Sự thật ngầm hiểu (Pain points):</strong>
+                            <ul class="list-disc pl-4 space-y-2">
+                                <li><strong>Hao hụt tài chính vô hình:</strong> Theo nghiên cứu, bụi bẩn làm giảm đến
+                                    30% hiệu suất. Khách hàng thấy hóa đơn điện tăng nhưng không biết cách đối chiếu
+                                    thông số trên Inverter để tìm lỗi.</li>
+                                <li><strong>Rủi ro hỏa hoạn:</strong> Sự suy giảm chất lượng cáp DC sau vài năm phơi
+                                    nắng gây nguy cơ hồ quang điện (chập cháy), là mối đe dọa trực tiếp tới sinh mạng
+                                    gia đình.</li>
+                                <li><strong>Bất lực với bảo hành:</strong> Khi thiết bị hỏng, đơn vị lắp đặt cũ đã phá
+                                    sản hoặc chối bỏ trách nhiệm, khách hàng không biết tìm ai để kích hoạt bảo hành
+                                    chính hãng.</li>
+                            </ul>
+                        </div>
+                        <p><strong class="text-slate-800 block mb-1">Chiến lược tiếp cận:</strong> Tư vấn gói
+                            <strong>SolarCare Hub</strong> như một "Chuyên gia y tế gia đình". Giáo dục họ hiểu rằng
+                            việc kiểm tra định kỳ không tốn kém, nhưng một vụ cháy Inverter sẽ đánh mất toàn bộ số tiền
+                            tiết kiệm điện trong nhiều năm.
+                        </p>
+                    </div>
+                </div>
+                <!-- B2B -->
+                <div
+                    class="bg-gradient-to-br from-white to-slate-50 rounded-xl p-6 border border-slate-200 shadow-sm relative equal-height-grid">
+                    <span class="pill bg-emerald-100 text-emerald-700 absolute top-5 right-5">Tối ưu Nguồn lực & Cam kết
+                        PR</span>
+                    <h3 class="text-xl font-bold text-slate-800 mb-5 flex items-center"><i
+                            class="fa-solid fa-hard-hat text-emerald-500 mr-3"></i>Đối tác B2B (Nhà thầu EPC & Quỹ PPA)
+                    </h3>
+                    <div class="space-y-4 text-sm text-slate-600 flex-grow editable" data-id="b2b-insight">
+                        <div class="mb-3">
+                            <strong class="text-slate-800 block mb-2">Sự thật ngầm hiểu (Pain points):</strong>
+                            <ul class="list-disc pl-4 space-y-2">
+                                <li><strong>Gánh nặng OPEX (Chi phí vận hành):</strong> EPC/PPA xuất sắc trong việc cấp
+                                    vốn và xây dựng, nhưng duy trì một đội ngũ kỹ sư O&M In-house trải dài khắp các tỉnh
+                                    thành là bài toán tiêu tốn nguồn lực và dòng tiền khổng lồ.</li>
+                                <li><strong>Chế tài vi phạm hợp đồng (SLA Penalties):</strong> Nếu hệ thống gặp sự cố
+                                    (Downtime) hoặc sản lượng điện giảm dưới mức cam kết với chủ mái, nhà đầu tư PPA
+                                    phải đền bù thiệt hại rất nặng nề.</li>
+                                <li><strong>Rào cản quản lý phân tán:</strong> Khó khăn trong việc tìm kiếm đối tác đủ
+                                    tầm nhìn công nghệ để xuất báo cáo hiệu suất (PR) minh bạch, đồng nhất cho hàng chục
+                                    dự án cùng lúc.</li>
+                            </ul>
+                        </div>
+                        <p><strong class="text-slate-800 block mb-1">Chiến lược tiếp cận:</strong> Định vị SolarCare là
+                            <strong>"Cánh tay nối dài"</strong>. Chúng tôi nhận Outsource (thuê ngoài) toàn bộ nghiệp vụ
+                            O&M. Giúp EPC/PPA biến định phí (nhân sự) thành biến phí, tối ưu lợi nhuận và an tâm mở rộng
+                            thêm dự án mới.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Chiến lược thực thi -->
+        <section class="glass-panel rounded-2xl shadow-sm p-8 border border-slate-200">
+            <div class="flex items-center space-x-3 mb-6 border-b border-slate-100 pb-4">
+                <div class="w-12 h-12 rounded-xl bg-purple-50 flex items-center justify-center text-purple-600">
+                    <i class="fa-solid fa-layer-group text-2xl"></i>
+                </div>
+                <h2 class="text-2xl font-bold text-slate-800">4. Chiến Lược & Lộ Trình Triển Khai (Dựa Trên Mục Tiêu)
+                </h2>
+            </div>
+
+            <!-- Tabs Navigation -->
+            <div class="flex flex-wrap gap-2 border-b border-slate-200 mb-8 pb-1">
+                <button class="px-5 py-2.5 tab-active transition-colors text-sm font-semibold"
+                    onclick="switchTab('roadmap', this)">
+                    <i class="fa-solid fa-bullseye mr-2"></i>Lộ Trình & Mục Tiêu 3 Giai Đoạn
+                </button>
+                <button class="px-5 py-2.5 tab-inactive transition-colors text-sm font-semibold"
+                    onclick="switchTab('channels', this)">
+                    <i class="fa-solid fa-network-wired mr-2"></i>Triển Khai Đa Kênh
+                </button>
+            </div>
+
+            <!-- Tab Content: Roadmap (Core Strategy Request) -->
+            <div id="roadmap-content" class="tab-content space-y-6">
+                <div class="editable" data-id="roadmap-strat">
+                    <p class="text-slate-600 mb-6 text-sm leading-relaxed">Để chiến dịch không bị đi chệch hướng, toàn
+                        bộ các hoạt động truyền thông sẽ được chia làm 3 Phase. Mỗi Phase phục vụ một mục tiêu cụ thể và
+                        sử dụng thông điệp riêng để "Mở khóa" tâm lý khách hàng.</p>
+
+                    <div class="timeline-container">
+                        <!-- Phase 1 -->
+                        <div class="mb-10 relative">
+                            <div class="timeline-dot"></div>
+                            <h4 class="text-lg font-bold text-emerald-700 mb-1">Phase 1 (Tháng 1-2): Giáo dục Cấp thiết
+                                & Tạo Lòng Tin</h4>
+                            <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                                    <div class="bg-slate-50 p-4 rounded-lg">
+                                        <p class="text-xs font-bold text-slate-400 uppercase">Mục tiêu (Objective)</p>
+                                        <p class="text-sm text-slate-700 mt-1 font-medium">Thay đổi nhận thức về sự nguy
+                                            hiểm của việc thiếu bảo trì định kỳ. Tạo lập định vị SolarCare là chuyên gia
+                                            kỹ thuật thực thụ.</p>
+                                    </div>
+                                    <div class="bg-emerald-50 p-4 rounded-lg border border-emerald-100">
+                                        <p class="text-xs font-bold text-emerald-600 uppercase">Thông điệp trọng tâm
+                                            (Key Message)</p>
+                                        <p class="text-sm text-emerald-800 mt-1 font-bold">"Đừng phó mặc tài sản tỷ đồng
+                                            cho những rủi ro vô hình."</p>
+                                    </div>
+                                </div>
+                                <div class="text-sm text-slate-600">
+                                    <strong class="text-slate-800 block mb-2">Hành động cốt lõi:</strong>
+                                    <ul class="list-disc pl-5 space-y-1">
+                                        <li><strong>Website:</strong> Xây dựng hệ thống bài viết chuyên môn (SEO) giải
+                                            thích các rủi ro chập cháy, micro-cracks do sai lầm khi tự bảo trì. Đưa công
+                                            cụ tính toán sự sụt giảm tài chính lên trang chủ.</li>
+                                        <li><strong>Social Media (Facebook/LinkedIn):</strong> Đăng tải hình ảnh quét
+                                            Drone tầm nhiệt (Thermal) thực tế để trực quan hóa lỗi "Điểm nóng" (Hotspot)
+                                            - thứ mắt thường không nhìn thấy.</li>
+                                        <li><strong>B2B Direct:</strong> Chuẩn hóa Báo cáo Khảo sát Mẫu (Audit Report
+                                            Sample) để gửi trực tiếp qua Email/LinkedIn tới các quản lý dự án EPC/PPA.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Phase 2 -->
+                        <div class="mb-10 relative">
+                            <div class="timeline-dot"></div>
+                            <h4 class="text-lg font-bold text-blue-700 mb-1">Phase 2 (Tháng 3-4): Cung Cấp Giải Pháp
+                                Trải Nghiệm</h4>
+                            <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                                    <div class="bg-slate-50 p-4 rounded-lg">
+                                        <p class="text-xs font-bold text-slate-400 uppercase">Mục tiêu (Objective)</p>
+                                        <p class="text-sm text-slate-700 mt-1 font-medium">Chuyển hóa nỗi sợ thành hành
+                                            động. Khuyến khích khách hàng đăng ký trải nghiệm đánh giá hệ thống bước đầu
+                                            để thu thập dữ liệu (Lead Generation).</p>
+                                    </div>
+                                    <div class="bg-blue-50 p-4 rounded-lg border border-blue-100">
+                                        <p class="text-xs font-bold text-blue-600 uppercase">Thông điệp trọng tâm (Key
+                                            Message)</p>
+                                        <p class="text-sm text-blue-800 mt-1 font-bold">"Khám sức khỏe hệ thống toàn
+                                            diện - Chặn đứng thất thoát tài chính."</p>
+                                    </div>
+                                </div>
+                                <div class="text-sm text-slate-600">
+                                    <strong class="text-slate-800 block mb-2">Hành động cốt lõi:</strong>
+                                    <ul class="list-disc pl-5 space-y-1">
+                                        <li><strong>B2C Campaign:</strong> Chạy quảng cáo Facebook Ads tặng gói "Tầm
+                                            soát an toàn và Đo điện rò rỉ 0đ" cho các hộ gia đình để kỹ sư có cớ tiếp
+                                            cận hiện trường.</li>
+                                        <li><strong>B2B Campaign:</strong> Đề xuất tài trợ 1 chuyến bay Flycam tầm nhiệt
+                                            miễn phí cho một nhà máy của đối tác PPA để chứng minh năng lực phát hiện
+                                            lỗi chính xác của SolarCare.</li>
+                                        <li><strong>Automation:</strong> Kích hoạt Chatbot và Zalo ZNS để tự động phân
+                                            luồng nhu cầu khách hàng và đẩy thông báo cho Sales ngay khi khách điền
+                                            form.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Phase 3 -->
+                        <div class="mb-2 relative">
+                            <div class="timeline-dot"></div>
+                            <h4 class="text-lg font-bold text-purple-700 mb-1">Phase 3 (Tháng 5-6): Chuyển Đổi & Ký Kết
+                                Dài Hạn</h4>
+                            <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                                    <div class="bg-slate-50 p-4 rounded-lg">
+                                        <p class="text-xs font-bold text-slate-400 uppercase">Mục tiêu (Objective)</p>
+                                        <p class="text-sm text-slate-700 mt-1 font-medium">Thiết lập nguồn thu ổn định.
+                                            Chuyển đổi khách hàng sử dụng dịch vụ thử nghiệm sang việc ký kết các Hợp
+                                            đồng Thuê bao/Outsource O&M dài hạn.</p>
+                                    </div>
+                                    <div class="bg-purple-50 p-4 rounded-lg border border-purple-100">
+                                        <p class="text-xs font-bold text-purple-600 uppercase">Thông điệp trọng tâm (Key
+                                            Message)</p>
+                                        <p class="text-sm text-purple-800 mt-1 font-bold">"Đối tác vận hành đắc lực -
+                                            Tối ưu lợi nhuận từng kWh."</p>
+                                    </div>
+                                </div>
+                                <div class="text-sm text-slate-600">
+                                    <strong class="text-slate-800 block mb-2">Hành động cốt lõi:</strong>
+                                    <ul class="list-disc pl-5 space-y-1">
+                                        <li><strong>Chăm sóc B2C:</strong> Đội ngũ Sales dựa trên báo cáo "khám sức
+                                            khỏe" ở Phase 2 để tư vấn gia chủ mua gói <strong>SolarCare Hub</strong> năm
+                                            nhằm tiết kiệm chi phí sửa chữa Inverter trong tương lai.</li>
+                                        <li><strong>Đối thoại B2B:</strong> Tổ chức các buổi họp kỹ thuật (Technical
+                                            Meeting) với Ban Giám đốc PPA, trình bày kế hoạch nhận khoán (Outsource) O&M
+                                            toàn bộ danh mục dự án giúp họ cắt giảm 30% định phí nội bộ.</li>
+                                        <li><strong>Tiếp thị lại (Retargeting):</strong> Chạy quảng cáo duy trì nhận
+                                            diện thương hiệu trên Facebook và LinkedIn tới những tập khách hàng đã tương
+                                            tác nhưng chưa ra quyết định.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab Content: Channels Implementation -->
+            <div id="channels-content" class="tab-content hidden space-y-6">
+                <div class="editable" data-id="channels-strat">
+                    <h3 class="text-lg font-bold text-slate-800 mb-3">Sự Mạch Lạc Trong Tiếp Cận Đa Kênh</h3>
+                    <p class="text-slate-600 mb-6 text-sm leading-relaxed">Chúng tôi loại bỏ các kênh không phù hợp định
+                        vị kỹ thuật chuyên sâu. Nguồn lực tập trung hoàn toàn vào các kênh giải quyết được nhu cầu thực
+                        tế của Khách hàng.</p>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch mb-6">
+                        <!-- Website -->
+                        <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm equal-height-grid">
+                            <h4
+                                class="font-bold text-slate-800 flex items-center mb-4 text-base border-b border-slate-100 pb-2">
+                                <i class="fa-solid fa-globe text-blue-600 mr-2"></i> Website (Nền Tảng Giải Pháp)
+                            </h4>
+                            <p class="text-sm text-slate-600 mb-3">Là nơi khách hàng chủ động tìm đến khi gặp sự cố.
+                                Website cung cấp <strong>Công cụ tính toán tổn thất sản lượng</strong>. Khi khách hàng
+                                nhìn thấy số tiền bị mất mỗi tháng, họ sẽ chủ động để lại thông tin cần tư vấn.</p>
+                            <p class="text-sm text-slate-600">Đồng thời là kho tài liệu, cung cấp các Báo cáo kỹ thuật
+                                mẫu chuyên nghiệp (Sample Report) để minh chứng năng lực thực tế với nhà đầu tư B2B.</p>
+                        </div>
+
+                        <!-- Social Media -->
+                        <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm equal-height-grid">
+                            <h4
+                                class="font-bold text-slate-800 flex items-center mb-4 text-base border-b border-slate-100 pb-2">
+                                <i class="fa-solid fa-bullhorn text-blue-600 mr-2"></i> Facebook & LinkedIn
+                            </h4>
+                            <p class="text-sm text-slate-600 mb-3"><strong>Facebook (Dành cho Gia đình):</strong> Liên
+                                tục giáo dục thị trường bằng các cảnh báo an toàn điện, hình ảnh thực tế cáp điện bị mòn
+                                do nắng, nâng cao ý thức bảo vệ tài sản của người dân.</p>
+                            <p class="text-sm text-slate-600"><strong>LinkedIn (Dành cho Doanh nghiệp):</strong> Tiếp
+                                cận trực tiếp các Project Manager, CEO của quỹ đầu tư PPA. Chia sẻ phương pháp ứng dụng
+                                công nghệ (Drone, AI) vào tối ưu chi phí O&M.</p>
+                        </div>
+
+                        <!-- Automation -->
+                        <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm md:col-span-2">
+                            <h4
+                                class="font-bold text-slate-800 flex items-center mb-4 text-base border-b border-slate-100 pb-2">
+                                <i class="fa-solid fa-robot text-emerald-600 mr-2"></i> Tự Động Hóa Dữ Liệu & CSKH (CRM
+                                & Automation)
+                            </h4>
+                            <p class="text-sm text-slate-600 mb-3">Sự chuyên nghiệp thể hiện ở khả năng phản hồi tức
+                                thì. Chúng tôi thiết lập luồng Chatbot phân loại tự động: Xác định khách hàng cần bảo
+                                trì hộ gia đình hay dự án thương mại ngay lập tức. Sau đó, dữ liệu tự động đẩy về hệ
+                                thống CRM nội bộ để điều phối Kỹ sư liên hệ.</p>
+                            <p class="text-sm text-slate-600">Hệ thống gửi tin Zalo ZNS tự động để nhắc lịch bảo trì
+                                định kỳ tiếp theo, đảm bảo sự kết nối liên tục, vững chắc trong suốt vòng đời dự án.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Feedback Section -->
+        <section class="bg-white rounded-2xl shadow-lg p-8 border-t-4 border-emerald-500 mt-12">
+            <h2 class="text-xl font-bold text-slate-800 mb-2 flex items-center"><i
+                    class="fa-solid fa-comments text-emerald-500 mr-3"></i>Góp Ý & Phê Duyệt Kế Hoạch</h2>
+            <p class="text-sm text-slate-500 mb-6">Ban Lãnh đạo vui lòng xem xét cấu trúc Lộ trình chiến lược, nếu các
+                mục tiêu Phase đã phù hợp, bộ phận sẽ bắt đầu tiến hành triển khai.</p>
+
+            <div class="flex flex-col space-y-4 bg-slate-50 p-6 rounded-xl border border-slate-100">
+                <input type="text" id="fbName" placeholder="Họ tên / Chức vụ..."
+                    class="px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none w-full md:w-1/3 transition-shadow text-sm">
+                <textarea id="fbContent" rows="3" placeholder="Nhập ý kiến đánh giá hoặc các điều chỉnh bổ sung..."
+                    class="px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none w-full transition-shadow text-sm"></textarea>
+                <button onclick="addFeedback()"
+                    class="bg-slate-800 hover:bg-slate-900 text-white font-semibold px-6 py-2.5 rounded-lg self-start transition-colors shadow-md text-sm">
+                    <i class="fa-solid fa-paper-plane mr-2"></i>Gửi Phản Hồi
+                </button>
+            </div>
+
+            <div id="feedbackList" class="mt-8 space-y-4">
+                <!-- Feedbacks will appear here -->
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center text-sm text-slate-400 mt-12 pb-8 border-t border-slate-200 pt-8 max-w-7xl mx-auto">
+        &copy; 2026 Developed for <span class="font-bold text-slate-600">SolarCare by NCSE</span>. Strategic Marketing
+        Plan.
+    </footer>
+
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
